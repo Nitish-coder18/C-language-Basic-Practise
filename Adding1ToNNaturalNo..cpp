@@ -1,12 +1,10 @@
 #include<stdio.h>
 int main() {
-	int num;
+	int num, sum;
 	printf ("Enter a Natural Number: ");
 	scanf ("%d",&num);
-	{
-	for (int i=1; i<num; i++) {
-		int sum = i + num;
-		printf(sum);
+	for (int i=1; i<=num; i++) {
+		sum += i;
 	}
-}
+	printf("%d",sum);
 }
